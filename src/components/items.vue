@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <li v-for="item in items" :key="item.name">
+        <li v-for="item in items" :key="item.name" id="itemsList">
             <h1>{{ item.name }}</h1>
         </li>
     </div>
@@ -35,7 +35,7 @@
 </script>
 
 <style scoped>
-#app{
+#itemsList{
     overflow:hidden; overflow-y:scroll;
 }
 li{
@@ -45,7 +45,7 @@ li{
     min-height: 50px;
     background-color: rgb(188, 205, 240);
     border-bottom: 1px solid rgb(255, 255, 255);
-    overflow:hidden; overflow-y:scroll;
+   
    
 }
 </style>
